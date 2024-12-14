@@ -1,0 +1,5 @@
+url: https://graywoods.me
+name: 회색의 숲
+description: 낱말로 쌓은 성
+
+post = "/:year/:month/:slug/"
