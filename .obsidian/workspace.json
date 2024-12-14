@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "852ce486a95d2dd9",
+    "type": "split",
+    "children": [
+      {
+        "id": "9968179959e7818c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e3210b5c7b9c273d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f6886cb91016ddce",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3c9bef3a4e6881e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70698b4a9dce07d3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "c81e92df37c933c3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "c9776c82a8227b2f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "56accdecddbac1ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "3612be7411c8add3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c8dd38fe3bf38b3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "875774bd08515560",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "c469ffc8d6c660ea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e1f07fd270991f6c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "e3210b5c7b9c273d",
+  "lastOpenFiles": [
+    "hugo.toml",
+    "themes/rocinante/images/tn.png",
+    "themes/rocinante/images/screenshot.png",
+    "themes/rocinante/exampleSite/static/images/img1.jpg",
+    "themes/rocinante/exampleSite/static/icon/favicon.jpg",
+    "themes/rocinante/exampleSite/resources/_gen/images/photos/yes-this-is-the-last/img13_hu6c8bef56599a40469c76d0fc7f776017_24766_350x0_resize_q100_box.jpg",
+    "themes/rocinante/exampleSite/resources/_gen/images/photos/yes-this-is-the-last/img13_hu617bc4390a2528009365c8e7e0584273_110063_350x0_resize_q100_box.jpg",
+    "themes/rocinante/exampleSite/resources/_gen/images/photos/yes-this-is-the-last/img12_hubbf09dc7691b8c5f2ee6a262d2b9e45d_25308_350x0_resize_q100_box.jpg",
+    "themes/rocinante/exampleSite/resources/_gen/images/photos/yes-this-is-the-last/img12_hu0ee8337262fd56acb396288e805301df_2235182_350x0_resize_q100_box.jpg",
+    "themes/rocinante/exampleSite/resources/_gen/images/photos/yes-this-is-the-last/img11_hu87ef6a72e4f7d5dc044b3dc5da6da4b4_803841_700x0_resize_q100_box.jpg",
+    "themes/rocinante/exampleSite/resources/_gen/images/photos/yes-this-is-the-last/img11_hu87ef6a72e4f7d5dc044b3dc5da6da4b4_803841_350x0_resize_q100_box.jpg",
+    "themes/rocinante/exampleSite/resources/_gen/assets/scss/css/rocinante.scss_4fddb88d50abca04f2e7ef77f0bb1c3b.content",
+    "themes/rocinante/exampleSite/content/post/this-is-a-blog-post.md",
+    "themes/rocinante/assets/css/rocinante.scss",
+    "themes/rocinante/assets/css/monokai-light.scss",
+    "themes/rocinante/assets/css/monokai-dark.scss",
+    "themes/rocinante/README.md",
+    "content/개인정보-보호-정책/index.md",
+    "content/wp-content/uploads/wpcode/cache/library/snippets.json",
+    "content/wp-content/uploads/wpcode/cache/docs.json",
+    "content/wp-content/uploads/2022/02/IBMPlexSansKR-Thin.ttf",
+    "content/wp-content/uploads/2022/02/IBMPlexSansKR-Text.ttf",
+    "content/wp-content/uploads/2022/02/IBMPlexSansKR-SemiBold.ttf",
+    "content/wp-content/uploads/2022/02/IBMPlexSansKR-Bold.ttf",
+    "content/posts/2024-04-27-perplexity-ai-검색하는-ai.md",
+    "content/posts/2022-10-03-아이를-키울-수-있는-형편.md",
+    "content/posts/2022-06-03-믿음의-정도.md",
+    "content/posts/2022-02-27-드라마-foundation.md",
+    "content/posts/2021-07-11-shadow-and-bone.md",
+    "content/posts/2021-03-09-lenovo-trackpoint-keyboard.md",
+    "content/posts/2020-08-10-저주받은-소녀cursed를-보기-위해-견뎌야할-몇-가지-아쉬.md",
+    "content/posts/2020-07-05-2020-7-5-2316.md",
+    "content/posts/2020-03-22-2020-3-22-1416.md",
+    "content/posts/2019-11-05-2019-11-5-2229.md",
+    "content/posts/2019-10-06-2019-10-6-1844.md",
+    "content/posts/2019-10-06-2019-10-6-1734.md",
+    "content/posts/2019-08-18-2019-08-18.md",
+    "content/posts/2019-07-07-2019-7-7-1832.md",
+    "content/posts/2019-06-30-2019-6-30-2152.md",
+    "content/posts/2019-05-30-2019-5-30-1812.md",
+    "content/posts/2019-05-13-2019-5-13-1039.md",
+    "content/posts/2018-12-11-2018-12-11-2137.md",
+    "content/posts/2018-09-03-9-3-18-1655.md",
+    "content/posts/2018-07-21-7-21-18-1639.md",
+    "content/posts/2018-05-12-5-12-18-2205.md",
+    "content/posts/2018-05-01-5-1-18-2154.md"
+  ]
+}
