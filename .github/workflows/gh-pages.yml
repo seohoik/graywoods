@@ -1,5 +1,11 @@
 name: Deploy Hugo to GH Pages
 
+- name: Checkout
+  uses: actions/checkout@v3
+  with:
+    submodules: true     # submodule 초기화 활성화
+    fetch-depth: 0       # 전체 커밋 이력
+
 on:
   push:
     branches: [ main ]
