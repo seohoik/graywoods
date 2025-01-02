@@ -1,0 +1,9 @@
+baseURL = 'https://seohoik.github.com/graywoods/'
+languageCode = 'en-us'
+title = '낱말로 쌓은 성'
+
+theme = 'rocinante'
+
+[permalinks]
+posts = "/:year/:month/:slug/"
+

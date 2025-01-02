@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spectre on 낱말로 쌓은 성</title>
+    <link>http://localhost:1313/graywoods/tags/spectre/</link>
+    <description>Recent content in Spectre on 낱말로 쌓은 성</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Sep 2018 07:56:08 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/graywoods/tags/spectre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>멜트다운(Meltdown)과 스펙터(Spectre)</title>
+      <link>http://localhost:1313/graywoods/2018/336/</link>
+      <pubDate>Mon, 03 Sep 2018 07:56:08 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2018/336/</guid>
+      <description>&lt;p&gt;지난 해 큰 이슈가 되었고,아직까지도 큰 영향을 미치고 있는 멜트다운과 스펙터 문제에 대해서 &lt;a href=&#34;https://stratechery.com/2018/meltdown-spectre-and-the-state-of-technology/&#34;&gt;잘 설명된 글&lt;/a&gt;이 있어서 간략히 소개해 드립니다.&lt;/p&gt;&#xA;&lt;p&gt;이 문제를 잘 이해하기 위해서는 컴퓨터의 기본적인 성격에 대해서는 이해해둘 필요가 있습니다. 첫 번째는 멍청하다는 점이고, 두 번째는 말도 안되게 빠르다는 점입니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;효율&#34;&gt;효율&lt;/h2&gt;&#xA;&lt;p&gt;컴퓨터가 멍청하긴 하지만 엄청나게 빠르죠. 그렇기 때문에 혼자서 컴퓨터 한 대를 통째로 쓴다면, 한정된 자원을 비효율적으로 쓰게되는 문제점이 생깁니다. 내 문제에 대한 답을 엄청 빠르게 가져다 주니까, CPU는 거의 대부분의 시간동안 할일이 없는거죠.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

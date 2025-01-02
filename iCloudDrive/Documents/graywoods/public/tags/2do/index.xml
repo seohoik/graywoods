@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2Do on 낱말로 쌓은 성</title>
+    <link>http://localhost:1313/graywoods/tags/2do/</link>
+    <description>Recent content in 2Do on 낱말로 쌓은 성</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2016 09:11:20 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/graywoods/tags/2do/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2Do: 진화하는 할일관리 앱</title>
+      <link>http://localhost:1313/graywoods/2016/172/</link>
+      <pubDate>Sun, 24 Jan 2016 09:11:20 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2016/172/</guid>
+      <description>&lt;p&gt;2Do라는 앱을 처음 접한 것은 아이폰4를 처음 사고 나서 얼마 안 있었을 때였습니다. 그 때는 당시유행하던 스큐어모픽 디자인을 빌려서 상당히 아기자기한 모습을 보여주는 한편 여러 가지 기능을 갖추고 있어서 한참 사용했습니다. 아이폰의 기본 미리알림과 동기화해서 사용했었는데, 기능은 많지만 복잡한 느낌이 강하게 들고 동기화 과정 등이 산만한 느낌이 들어서 좀 아쉬움이 있었어요. 그러다가 실수로 Things를 구매한 다음에 Things의 세련된 단순함이 마음에 들어서 한참 그것만 사용했습니다.&lt;/p&gt;&#xA;&lt;p&gt;몇 년이 흐른 뒤에 2Do 3의 Beta에도 참여를 해서 한참 사용해 보았지만, 여전히 산만하다는 생각이 강하게 들어서 Things로 돌아갔다가 호기심에 구입한 OmniFocus를 사용했다가 한참 이곳저곳을 기웃거렸습니다. 그러다가 Macstories의 Federico Viticci가 쓴 &lt;a href=&#34;https://www.macstories.net/stories/why-2do-is-my-new-favorite-ios-task-manager/&#34;&gt;2Do 리뷰&lt;/a&gt;를 보고 다시 한 번 사용해 보기로 마음먹었습니다. 마침 2Do에서 새롭게 선보이는 &lt;a href=&#34;http://www.2doapp.com/youve-got-task/&#34;&gt;&lt;strong&gt;Email to 2Do&lt;/strong&gt;&lt;/a&gt; 기능 또한 상당히 매력적으로 다가 왔기도 했구요.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2Do vs Things</title>
+      <link>http://localhost:1313/graywoods/2014/107/</link>
+      <pubDate>Wed, 03 Sep 2014 14:28:34 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2014/107/</guid>
+      <description>&lt;p&gt;스마트폰을 구입한 이후, 일정이나 해야할 일을 스마트폰에 입력해서 관리하는 것을 더 편히 여기게 되었습니다. 그러다가 구매한 앱이 바로 2Do와 Things인데요. 둘 모두 장단점이 있는 도구라고 생각합니다. 저 같은 경우 먼저 구입한 것은 2Do이고, 기능적인면에서 만족하고 사용하였습니다. 그러다가 반쯤은 실수로 반쯤은 호기심에 Things for iPhone을 구입하였는데, 단순하지만 딱 필요한 만큼은 있는 기능과 무엇보다 빠른 동기화가 마음에 들어 iPad버전까지 구매하여 사용하고 있습니다. &lt;em&gt;Mac은 없기 때문에 이 글에서는 iOS버전에 대해서만 말씀드리려 합니다.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2do&#34;&gt;2Do&lt;/h2&gt;&#xA;&lt;p&gt;2Do는 GTD에 기반한 앱은 아니지만, 태그 등을 활용해서 GTD에 맞춰 사용할 수는 있습니다. 그리고 비록 컨텍스트는 지원하지 않아도, 새로운 버전에서는 인박스 개념은 도입할 것으로 보입니다. 지금은 버전 3의 베타를 아이폰과 아이패드에서 사용 중인데, 베타이기 때문에 아이클라우드 리마인더를 이용한 동기화가 조금 불안정한 면이 있긴하지만 전반적으로 사용성과 비주얼 측면에서 대폭 향상되어 매우 만족스럽습니다. 사실 이전 버전에서는 동기화가 마음에 들지 않아 Things로 옮겨 갔엇는데, 새로운 버전은 동기화도 제법 차분해 졌습니다. 더구나 완전히 갈아엎었다 싶은 수준의 업데이트도 무료로 제공된다는게 고마울 정도지요.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

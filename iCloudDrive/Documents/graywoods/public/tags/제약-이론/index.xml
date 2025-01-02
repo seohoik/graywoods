@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>제약 이론 on 낱말로 쌓은 성</title>
+    <link>http://localhost:1313/graywoods/tags/%EC%A0%9C%EC%95%BD-%EC%9D%B4%EB%A1%A0/</link>
+    <description>Recent content in 제약 이론 on 낱말로 쌓은 성</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Feb 2013 08:49:42 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/graywoods/tags/%EC%A0%9C%EC%95%BD-%EC%9D%B4%EB%A1%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>더 골: 목표를 달성하는 방법</title>
+      <link>http://localhost:1313/graywoods/2013/61/</link>
+      <pubDate>Wed, 13 Feb 2013 08:49:42 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2013/61/</guid>
+      <description>&lt;p&gt;The Goal(이하 “더 골”)은 제약이론의 논리와 실무에서의 적용 방법을 소설의 형식을 빌려서 전달하고 있는 책이다. 여기서 제약이론이란, 생산속도가 다른 프로세스에 비해 느린 소수의 병목 프로세스가 전체 공정의 생산성을 결정짓는 것을 의미한다. 따라서 전체적인 생산성을 향상시키기위해서는 다른 부문보다도 병목 현상이 발생하는 공정의 생산성을 향상시키는 것이 가장 시급한 문제가 된다. 사실 제품을 생산하면서 여러 공정을 거치게 된다면, 그 중에서 처리하는데 가장 긴 시간이 걸리는 공정이 전체 생산성에 큰 영향을 미치리라는 사실은 상당히 명확해 보인다. 그렇다면, 골드렛 교수가 제약이론을 창시하기 전까지 왜 사람들은 병목 자원에 주의를 기울이지 않았을까.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

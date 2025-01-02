@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>팓캐스트 on 낱말로 쌓은 성</title>
+    <link>http://localhost:1313/graywoods/tags/%ED%8C%93%EC%BA%90%EC%8A%A4%ED%8A%B8/</link>
+    <description>Recent content in 팓캐스트 on 낱말로 쌓은 성</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 May 2015 14:20:13 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/graywoods/tags/%ED%8C%93%EC%BA%90%EC%8A%A4%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Podcast Apps: Castro v. OverCast</title>
+      <link>http://localhost:1313/graywoods/2015/126/</link>
+      <pubDate>Sun, 10 May 2015 14:20:13 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2015/126/</guid>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;처음에는 애플의 공식 Podcast 앱을 사용하다가, 조금 불편함을 느끼고 InstaCast를 다운 받아서 한참 사용하였습니다. 인스타캐스트도 분명 잘 만든 앱이라고 생각하지만, 쓰다보니 약간씩 불편함이 느껴져서 새로운 팓캐스트 앱을 찾아보기로 마음을 먹고 선택한 것이 &lt;!-- raw HTML omitted --&gt;Castro&lt;!-- raw HTML omitted --&gt;와 &lt;!-- raw HTML omitted --&gt;OverCast&lt;!-- raw HTML omitted --&gt;입니다. PocketCast 같은 다른 앱에 대한 추천 글도 많이 있었지만, 디자인도 고민해보다 보니 결국은 위 두개를 사용해 보기로 마음먹게 되었습니다.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App on 낱말로 쌓은 성</title>
+    <link>http://localhost:1313/graywoods/tags/app/</link>
+    <description>Recent content in App on 낱말로 쌓은 성</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2017 12:52:57 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/graywoods/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>몸으로 하는 명상: Sway</title>
+      <link>http://localhost:1313/graywoods/2017/273/</link>
+      <pubDate>Sun, 28 May 2017 12:52:57 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2017/273/</guid>
+      <description>&lt;p&gt;명상 또는 마음챙기기는 스트레스가 점차 많아지는 현대 사회를 반영해서 점점 더 중요해지고 있습니다. 당장 주변을 둘러봐도 뇌호흡이라거나 마음수련, 아니면 선원 같은 곳들이 생각보다는 많이 있다는 것을 알 수 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;앱스토어에도 꽤 오래전부터 제법 많은 종류의 명상 관련 앱들이 올라와 있는 것을 확인해 볼 수 있습니다. 제가 본 바로는 크게 두 종류가 있는 것 같은데요. Windy처럼 차분한 소리를 반복적으로 들려주면서 집중할 수 있게 해주는 명상앱과 Stop, Breathe, and Think나 Headspace, &lt;a href=&#34;https://graywoods.me/2015/131/&#34;&gt;예전에 소개&lt;/a&gt;한 적있는 Buddify처럼 어떤 생각을 하면서, 어떻게 호흡을 하라고 말로 찬찬히 설명해주는 명상 보조 (Guided Meditation) 앱을 떠올려 볼 수 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>숫자로 보는 나</title>
+      <link>http://localhost:1313/graywoods/2016/224/</link>
+      <pubDate>Sun, 22 May 2016 13:03:05 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2016/224/</guid>
+      <description>&lt;p&gt;급속도로 발전한 IT와 통계기법 덕분에 기존에는 도저히 분석할 수 없었던 엄청난 양의 Data를 분석하고 의미를 찾을 수 있게 되었고, 이제 이러한 대량의 데이터를 Big Data라고 부르면서 새로운 사업 영역에 적용할 방법을 찾기 위해 노력하고 있습니다. 이러한 트렌드 아래에서 스타트업이나 벤처 회사들은 초기에 상당한 손실을 보면서도 고객 정보를 획득하는 것으로 투자자의 이목을 끌어내기도 하고 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;Big Data 만큼의 대단한 자원이나 기법을 요구하지는 않지만, 사회의 많은 측면들을 숫자로 치환해서 보기 시작하면서, &lt;strong&gt;나 자신&lt;/strong&gt;의 여러 측면도 숫자로 바꿔서 — 지금까지와는 완전히 다른 관점에서 — 보는 사람들도 많아지고 있습니다. 소위 &lt;strong&gt;계량화된 나(Qunatified Me)&lt;/strong&gt; 라고 말할 수 있는 것들이고, 내 삶의 여러 측면을 _측정_해주는 도구나 앱 등의 서비스들도 점차 많아지고 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drafts 개발자가 만든 사전: Terminology</title>
+      <link>http://localhost:1313/graywoods/2016/207/</link>
+      <pubDate>Sun, 17 Apr 2016 12:18:23 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2016/207/</guid>
+      <description>&lt;p&gt;아이폰이나 아이프드에서 사전 앱을 많이 사용하시나요? 전 이제 학생도 아니고 영어로된 텍스트를 읽을 일도 그렇게 많지 않다보니까 사전을 자주 사용하지는 않습니다. 그래서 이런저런 좋은 사전이 새로 나오거나 가끔 무료로 풀려도 몇 번 사용해보고는 늘 쓰던 사전으로 돌아옵니다. 바로 그 늘 돌아오는 사전이 &lt;a href=&#34;https://itunes.apple.com/us/app/terminology-3-extensible-dictionary/id687798859?mt=8&#34;&gt;Terminology&lt;/a&gt;입니다.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;이 앱은 &lt;a href=&#34;https://itunes.apple.com/us/app/drafts-4-quickly-capture-notes/id905337691?mt=8&#34;&gt;Drafts&lt;/a&gt;를 만든 &lt;a href=&#34;http://agiletortoise.com/&#34;&gt;Agile Tortoise&lt;/a&gt;에서 만든 사전 앱입니다. Drafts를 사용해 봤다면 잘 아시겠지만 이 앱도 url scheme를 기반으로 작동하도록 되어 있어서 이를 지원하는 사전앱이 여러 개 있다면 먼저 찾고 싶은 단어를 쓴 다음에 취향에 맞는 사전을 이것저것 골라서 단어를 검색해 볼 수 있는 장점이 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pomodoro와 Flat Tomato</title>
+      <link>http://localhost:1313/graywoods/2016/191/</link>
+      <pubDate>Sun, 06 Mar 2016 07:00:24 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2016/191/</guid>
+      <description>&lt;h2 id=&#34;pomodoro는-무엇인가&#34;&gt;Pomodoro는 무엇인가&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://pomodorotechnique.com/&#34;&gt;Pomodoro&lt;/a&gt;(이하, 포모도로) 방법론은 생상선을 높이기 위한 아주 간단하면서도 효과적인 방법 중의 하나입니다. 포모도로 방법론은 1980년대에 Francesco Cirillo에 의해서 고안된 방법론&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;입니다. 사실 포모도로는 이탈리아어로 토마토라는 뜻인데, 처음 방법론을 고안할 때 아래 사진과 같은 타이머를 이용하다보니 이런 명칭으로 정해진 듯 합니다.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;전통적인 방식의 포모도로는 적용이 단순합니다.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;25분 간 집중해서 할 일을 처리&lt;/li&gt;&#xA;&lt;li&gt;5분 휴식&lt;/li&gt;&#xA;&lt;li&gt;1.과 2.를 세 번 반복하고 25분 간 집중해서 할 일 처리 (그러면 25분 집중 4회, 휴식 3회)&lt;/li&gt;&#xA;&lt;li&gt;네 번째 휴식은 15분간 진행&lt;/li&gt;&#xA;&lt;li&gt;다시 처음으로 돌아가서 1. ~ 4. 진행&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;말로 풀어서 설명하면 25분 집중하고 5분 동안 쉬는데, 네 번째 휴식은 15분 동안 진행한다고 생각하시면 됩니다. 이는 사람의 집중력에 한계가 있기 때문에, 집중력을 유지할 수 있는 동안은 일에 집중하고, 집중력이 소모되었을 즘에 5분 정도 휴식을 취함으로써 다시 집중할 수 있도록 하려는 것입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>일기 너머의 일기: Day One 2</title>
+      <link>http://localhost:1313/graywoods/2016/184/</link>
+      <pubDate>Wed, 10 Feb 2016 15:37:13 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2016/184/</guid>
+      <description>&lt;p&gt;지금 버전 1의 앱 (Day One Classic)이 내려가서 정확히 언제부터였는지 모르겠으나, 4-5년 전 첫 출시와 함께 일기 어플의 정석처럼 여겨져온 &lt;a href=&#34;https://itunes.apple.com/us/app/day-one-2-journal-+-notes/id1044867788?mt=8&amp;amp;uo=4&amp;amp;at=10l6nh&amp;amp;ct=ms_inline&#34;&gt;Day One&lt;/a&gt;이 두 번째 버전을 발표했습니다. 벌써 여러 해 전에 산 이후 꾸준하게 잘 써 왔기 때문에 이번 두 번째 버전도 출시와 함께 기념 할인을 하고 있는 동안 구매해서 사용해 보았습니다. 전반적인 느낌은 예전 앱의 깔끔하고 예쁜 모습과 쓰기 쉬운 UI를 최대한 잘 유지하면서, 그동안 사용자들이 요청해온 몇 가지 기능들을 잘 녹여낸 것 같습니다. 다만, 아직 새 앱의 첫 버전이기 때문에 몇 가지 아쉬운 점들은 여전히 조금 남아 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Get Productive (업무 능률 향상) 프로모션</title>
+      <link>http://localhost:1313/graywoods/2016/180/</link>
+      <pubDate>Wed, 27 Jan 2016 14:18:04 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2016/180/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;애플에서 Get Productive(업무 능률 향상) 프로모션을 진행 중입니다. 이 중에서 예전에 구매했던 앱도 일부 있고, 유용해 보인다 싶은 것 중에서 가격이 저렴한 김에 구입한 앱도 몇 가지 있는데요. 실제 구매해 본 것 위주로 간단히 소개를 해보려고 합니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;pdf-expert-51&#34;&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/pdf-expert-5-fill-forms-annotate/id743974925?mt=8&amp;amp;uo=4&amp;amp;at=10l6nh&amp;amp;ct=ms_inline&#34;&gt;PDF Expert 5&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;기본적으로는 PDF를 볼 수 있게 해주는 앱입니다만 추가적으로 파일 관리, PDF 파일 위에 필기 등 여러가지 기능을 제공합니다. 저는 Dropbox, Onedrive 등과 연동해서 클라우드에 저장된 PDF 파일을 읽을 때 주로 활용하고 있습니다. 예전 대학원에 있을 때는 PDF 형태로 업로드되는 파일들을 읽고, 중요한 내용을 메모하기도 했습니다.&lt;br&gt;&#xA;상당히 신뢰받는 개발사 답게 업데이트도 꾸준한 편이고, 여러가지 편의 기능도 눈에 잘 띄는 곳에 쓰기 편하게 있습니다. 개인적으로는 PDF 문서의 테두리 공백을 제거하고 보여주는 기능이 괜찮았습니다. 다만, 최근에 원드라이브와 동기화한 폴더의 업데이트가 제대로 이루어지지 않는 문제가 있는데, 어느 측의 문제인지는 정확히 모르겠네요.&lt;br&gt;&#xA;필기 기능은 충분히 쓸만하지만, 필기를 목적으로 하는 다른 앱에 비해서는 부족한 편입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2Do: 진화하는 할일관리 앱</title>
+      <link>http://localhost:1313/graywoods/2016/172/</link>
+      <pubDate>Sun, 24 Jan 2016 09:11:20 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2016/172/</guid>
+      <description>&lt;p&gt;2Do라는 앱을 처음 접한 것은 아이폰4를 처음 사고 나서 얼마 안 있었을 때였습니다. 그 때는 당시유행하던 스큐어모픽 디자인을 빌려서 상당히 아기자기한 모습을 보여주는 한편 여러 가지 기능을 갖추고 있어서 한참 사용했습니다. 아이폰의 기본 미리알림과 동기화해서 사용했었는데, 기능은 많지만 복잡한 느낌이 강하게 들고 동기화 과정 등이 산만한 느낌이 들어서 좀 아쉬움이 있었어요. 그러다가 실수로 Things를 구매한 다음에 Things의 세련된 단순함이 마음에 들어서 한참 그것만 사용했습니다.&lt;/p&gt;&#xA;&lt;p&gt;몇 년이 흐른 뒤에 2Do 3의 Beta에도 참여를 해서 한참 사용해 보았지만, 여전히 산만하다는 생각이 강하게 들어서 Things로 돌아갔다가 호기심에 구입한 OmniFocus를 사용했다가 한참 이곳저곳을 기웃거렸습니다. 그러다가 Macstories의 Federico Viticci가 쓴 &lt;a href=&#34;https://www.macstories.net/stories/why-2do-is-my-new-favorite-ios-task-manager/&#34;&gt;2Do 리뷰&lt;/a&gt;를 보고 다시 한 번 사용해 보기로 마음먹었습니다. 마침 2Do에서 새롭게 선보이는 &lt;a href=&#34;http://www.2doapp.com/youve-got-task/&#34;&gt;&lt;strong&gt;Email to 2Do&lt;/strong&gt;&lt;/a&gt; 기능 또한 상당히 매력적으로 다가 왔기도 했구요.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Application 사업모델</title>
+      <link>http://localhost:1313/graywoods/2015/161/</link>
+      <pubDate>Sat, 12 Dec 2015 12:45:53 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2015/161/</guid>
+      <description>&lt;p&gt;지난 1년 쯤 전부터 팓캐스트를 즐겨듣고 있습니다. 아주 여러 프로그램을 청취하는 것은 아니지만 내가 전혀 모르던 것을 배우는 새로운 방식이고, 왜 진작 안 들어봤을까 싶은 생각도 들기도 합니다. 팓캐스트를 본격적으로 듣기 시작하면서 쓸만한 팓캐스트 앱을 찾았었는데요. 처음에 Castro를 받아서 쓰다가 얼마전부터는 Overcast를 유료 결제하고 사용하기 시작했습니다. 유료 결제 전이긴 했으나 &lt;a href=&#34;https://graywoods.me/2015/149/&#34;&gt;두 개 앱을 비교해보는 글&lt;/a&gt;을 써보기도 했습니다.&lt;/p&gt;&#xA;&lt;p&gt;그런데 제가 Overcast를 유료 구매하고 얼마되지 않아서, 앱이 완전 무료화가 되었습니다. 그리고 꽤 재미있는 수익모델을 도입했는데, 바로 후원자 모델입니다. 유명 개발자인 Marco Arment는 새로운 버전의 &lt;a href=&#34;http://www.marco.org/2015/10/09/overcast2&#34;&gt;Overcast를 소개하는 글&lt;/a&gt;에서 새로운 사업모델을 소개하는 이유도 밝힙니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dispatch: 이메일의 효율적 관리</title>
+      <link>http://localhost:1313/graywoods/2015/149/</link>
+      <pubDate>Sun, 30 Aug 2015 07:31:43 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2015/149/</guid>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Dispatch&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;는 내가 벌써 2년 이상 아이폰에서 사용해온 메일 클라이언트 앱이다. 실시간으로 도착한 새 이메일의 알림을 보내주지 않는다는 것은 분명 단점일 수 있겠지만, 내가 사용하는 범위에서는 크게 신경쓰일만한 일도 아니고, 그 외의 다른 측면에서 편리한 부분이 많기 때문에 애용하고 있다. 아마 내 아이폰에서 하루에도 가장 많이 열어보는 앱 중의 하나일 것이다. 며칠 전에 바로 이 Dispatch가 아이패드를 정식으로 지원하기 시작했다. 오랫동안 사용하면서도 이 앱에 대해 써볼 생각은 미처 못했는데, 이번 업데이트를 기회로 한 번 사용기를 적어보고자 한다.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Taskmator: 아이폰과 아이패드를 위한 Taskpaper 클라이언트</title>
+      <link>http://localhost:1313/graywoods/2015/145/</link>
+      <pubDate>Sun, 09 Aug 2015 08:39:43 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2015/145/</guid>
+      <description>&lt;p&gt;Taskmator는 iOS 기기에서 Taskpaper 형식의 문서와 호환되도록 개발된 앱입니다. 그러니 일단 Taskpaper가 무엇인지부터 간단히 설명드릴게요.&lt;/p&gt;&#xA;&lt;h2 id=&#34;taskpaper&#34;&gt;Taskpaper&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.hogbaysoftware.com/products/taskpaper&#34;&gt;Taskpaper&lt;/a&gt;는 할일을 관리하는 방식의 하나입니다. GTD나 프랭클린 코비 등이 의미하는 것과 달리, 방법론적인 것은 아니고, 할일과 프로젝트를 기록하고 관리하는 기술에 대한 것이지요. 다른 무엇보다도 &lt;strong&gt;호환성&lt;/strong&gt; 측면을 가장 높이두고 개발한 방식이라고 생각할 수 있습니다. 예를 들어, OmniFocus나, Things를 이용하는 것 뿐만 아니라, 여러 플랫폼과 호환되는 Todoist, Wunderlist 등을 이용하더라도, 내가 기록해둔 할일과 프로젝트는 바로 그 프로그램에 맞는 형식으로 저장되어 관리되고, 만약 Wunderlist에서 한 일을 어떻게든 파일에 접근해서 Things로 열어본다면 이해할 수 없는 말들만 잔뜩 보게 될 겁니다. 이에 반해 Taskpaper는 그 이름이 의미하듯이 단순히 종이, 즉 txt파일에 할일을 적어서 관리하는 것입니다. 다만 생각나는대로 적어두면 관리가 어려우니까 나름의 체계를 세운 것이라고 볼 수 있죠.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>부처님 되기 연습</title>
+      <link>http://localhost:1313/graywoods/2015/131/</link>
+      <pubDate>Mon, 15 Jun 2015 13:26:52 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2015/131/</guid>
+      <description>&lt;p&gt;시간이 지날수록 그저 안정적인 생활을 위해서도 많은 스트레스를 감수하게 되어가는 것 같습니다. 더구나 우리나라는 특히 모든 것이 빠르고, 다른 사람의 시선이나 기대도 많이 신경쓰기 때문에 개개인이 받는 스트레스는 다른 나라에 비해서도 더 큰 것 같습니다. 그래서인지 요즘에 외국에서도 __Mindfulness__에 대한 이야기가 많이 나오는 것 같습니다. 이러한 상태에 도달하기 위한 대표적인 방법의 하나가 명상입니다. 이번에는 이런 명상에 대한 이야기와 명상에 도움이 되었던 모바일 앱을 한 번 소개해 볼까 합니다.&lt;/p&gt;&#xA;&lt;p&gt;저도 스트레스에 좀 약한 성격이다 보니 예전부터 명상을 아침, 저녁으로 10분씩 꾸준히 해보려고 시도해보고 있습니다. 물론 하루도 거르지 않는 것은 거의 불가능했고, 사실 할 때 그 10분을 채우는 것도 쉽지는 않았습니다. 그래서 찾아보기 시작한 것이 명상 가이드 앱들인데, 처음에 사용해본 것은 &lt;a href=&#34;https://appsto.re/us/0MeBU.i&#34;&gt;Stop, Breathe &amp;amp; Think&lt;/a&gt;입니다. 비영리기구에서 만든 무료 앱으로 다양한 가이드 명상이 있고, 최근 업데이트에서는 좀더 다양한 명상을 인앱으로 판매하고 있습니다. 쓰다가 약간의 아쉬움이 느껴져서 찾아본 것이 &lt;a href=&#34;https://appsto.re/us/-At-O.i&#34;&gt;buddhify&lt;/a&gt;입니다. $ 4.99의 유료앱이지만 선택할 수 있는 명상의 종류가 다양한 편입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Podcast Apps: Castro v. OverCast</title>
+      <link>http://localhost:1313/graywoods/2015/126/</link>
+      <pubDate>Sun, 10 May 2015 14:20:13 +0000</pubDate>
+      <guid>http://localhost:1313/graywoods/2015/126/</guid>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;처음에는 애플의 공식 Podcast 앱을 사용하다가, 조금 불편함을 느끼고 InstaCast를 다운 받아서 한참 사용하였습니다. 인스타캐스트도 분명 잘 만든 앱이라고 생각하지만, 쓰다보니 약간씩 불편함이 느껴져서 새로운 팓캐스트 앱을 찾아보기로 마음을 먹고 선택한 것이 &lt;!-- raw HTML omitted --&gt;Castro&lt;!-- raw HTML omitted --&gt;와 &lt;!-- raw HTML omitted --&gt;OverCast&lt;!-- raw HTML omitted --&gt;입니다. PocketCast 같은 다른 앱에 대한 추천 글도 많이 있었지만, 디자인도 고민해보다 보니 결국은 위 두개를 사용해 보기로 마음먹게 되었습니다.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
