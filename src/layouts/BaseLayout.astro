@@ -17,6 +17,10 @@ const {
   title = "낱말로 쌓은 성", // Default title
   description = "내 생각과 조사", // Default description
 } = Astro.props;
+
+// import vercel analytics
+import Analytics from '@vercel/analytics/astro'
+
 ---
 
 <!DOCTYPE html>
@@ -79,6 +83,7 @@ const {
 
     {/* Slot for page-specific head elements (like AstroSeo) */}
     <slot name="head" />
+    <Analytics />
   </head>
   <body class="font-sans antialiased text-zinc-900 bg-white"> {/* Base body styles */}
     {/* You might need to restore Header and Footer components from the original theme */}
