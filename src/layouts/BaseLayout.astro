@@ -18,9 +18,6 @@ const {
   description = "내 생각과 조사", // Default description
 } = Astro.props;
 
-// import vercel analytics
-import { Analytics } from '@vercel/analytics/astro'
-
 ---
 
 <!DOCTYPE html>
@@ -103,6 +100,5 @@ import { Analytics } from '@vercel/analytics/astro'
        © {new Date().getFullYear()} {title}. All rights reserved.
        {/* You can add more footer content here */}
      </footer>
-     <Analytics />
   </body>
 </html>
