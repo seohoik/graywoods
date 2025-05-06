@@ -4,26 +4,38 @@ import EntriesOne from "@/components/entries/EntriesOne.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("posts");
-  const uniqueTags = [
-    ...new Set(allPosts.map((post) => post.data.tags).flat()),
-  ];
+  const allPosts = await getCollection('blog'); // 👈 Replace 'blog' with your actual collection name
 
-  return uniqueTags.map((tag) => {
-    // Filter posts by tag
-    const filteredPosts = allPosts.filter((post) =>
-      post.data.tags.includes(tag)
-    );
-    // Sort filtered posts by date in descending order
-    const sortedPosts = filteredPosts.sort(
-      (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate)
-    );
+  const tagsData = {};
+  allPosts.forEach(post => {
+    if (post.data.tags && Array.isArray(post.data.tags)) {
+      post.data.tags.forEach(tag => {
+        const tagName = String(tag); // Ensure tag is a string
+        if (!tagsData[tagName]) {
+          tagsData[tagName] = [];
+        }
+        // Ensure you're passing the whole post object, or the necessary parts
+        tagsData[tagName].push(post); 
+      });
+    }
+  });
 
+  const tags = Object.keys(tagsData).map(tagName => { // This is your 'tags' variable
     return {
-      params: { tag },
-      props: { posts: sortedPosts },
+      name: tagName,
+      posts: tagsData[tagName] // These are the posts that will be passed as props
     };
   });
+
+  // The rest of your existing .map logic for 'paths'
+  const paths = tags.map(tagInfo => {
+    console.log('Processing tag:', tagInfo.name, 'with', tagInfo.posts.length, 'posts');
+    return {
+      params: { tag: tagInfo.name },
+      props: { posts: tagInfo.posts },
+    };
+  });
+  return paths;
 }
 
 const { tag } = Astro.params;
