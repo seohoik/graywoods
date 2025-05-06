@@ -1,0 +1,112 @@
+---
+// src/layouts/BaseLayout.astro (or similar layout file)
+import "../styles/global.css"; // Adjust path if necessary
+import { AstroSeo } from "@astrolib/seo";
+
+// Define the properties this layout expects from pages using it
+export interface Props {
+  title: string;
+  description: string;
+  canonicalURL: string; // Full URL for the canonical link
+  ogImageURL?: string; // Optional: Full URL for the Open Graph image
+  ogImageAlt?: string; // Optional: Alt text for the OG image
+  author?: string;
+  keywords?: string; // Comma-separated keywords string
+}
+
+// Get the props passed from the page (e.g., index.astro, [...slug].astro)
+const {
+  title,
+  description,
+  canonicalURL,
+  ogImageURL = "https://graywoods.me/default-og-image.jpg", // Provide a default OG image URL
+  ogImageAlt = "낱말로 쌓은 성 블로그 대표 이미지", // Default alt text
+  author = "graywoods", // Default author
+  keywords = "블로그, 글, 생각", // Default keywords
+} = Astro.props;
+
+const defaultOgImageUrl = new URL(ogImageURL, Astro.site).toString(); // Ensure full URL
+---
+
+<!DOCTYPE html>
+<html lang="ko"> {/* Set language to Korean */}
+  <head>
+    {/* Astro SEO Component handles Title, Description, Canonical, OG, Twitter */}
+    <AstroSeo
+      title={title}
+      description={description}
+      canonical={canonicalURL}
+      openGraph={{
+        url: canonicalURL,
+        title: title,
+        description: description,
+        images: [
+          {
+            url: defaultOgImageUrl, // Use the prop or default image URL
+            width: 1200,
+            height: 630,
+            alt: ogImageAlt,
+            type: "image/jpeg", // Adjust type if needed (e.g., image/png)
+          },
+        ],
+        site_name: "낱말로 쌓은 성", // Your site name
+        type: "website", // Use 'article' for blog posts if desired
+        locale: "ko_KR", // Set locale to Korean
+      }}
+      twitter={{
+        handle: "@gray_woods", // Your Twitter handle
+        cardType: "summary_large_image",
+      }}
+    />
+
+    {/* Basic Meta Tags */}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content={author} />
+    <meta name="keywords" content={keywords} />
+
+    {/* Favicons (keep these as they are specific icons) */}
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> {/* Default 180x180 */}
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    {/* Favicon for IE (Optional, but good practice) */}
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    {/* Favicons for different sizes (Optional, but good practice) */}
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+
+    {/* Additional SEO & Browser Hints */}
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" /> {/* Adjust theme color if needed */}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {/* Fonts */}
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=jet-brains-mono@1,2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    {/* Scripts */}
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    {/* Slot for page-specific head elements (if needed) */}
+    <slot name="head" />
+  </head>
+  <body>
+    {/* Your main layout structure (header, main content slot, footer) */}
+    <slot /> {/* This is where the page content will be injected */}
+  </body>
+</html>

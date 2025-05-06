@@ -1,0 +1,96 @@
+---
+// src/components/entries/EntriesOne.astro
+const { title, url, description, pubDate, image, alt, tags } = Astro.props;
+
+const displayImage = image; // Keep image URL if provided
+const displayAlt = alt || title || 'Blog post image';
+const displayTags = Array.isArray(tags) ? tags : [];
+const hasImage = !!displayImage; // Check if an image URL is provided
+
+// 설명(description)이 실제로 존재하고, 기본 안내 문구가 아닌 경우에만 true
+const shouldShowDescription = description && description.trim() !== "기본 설명을 입력하세요" && description.trim() !== "";
+
+// 날짜 포맷팅 함수 (한국식 'YYYY년 M월 D일' 형식)
+function formatDate(dateString) {
+  if (!dateString) return '';
+  try {
+    const date = new Date(dateString);
+    // Intl.DateTimeFormat을 사용하여 더 유연하게 포맷팅 가능
+    return date.toLocaleDateString('ko-KR', {
+      year: 'numeric',
+      month: 'long', // 'long'은 'MM월' 형식
+      day: 'numeric'  // 'D일' 형식
+    });
+  } catch (e) {
+    console.error("Invalid date format:", dateString, e);
+    return dateString; // 오류 발생 시 원본 문자열 반환 (또는 다른 처리)
+  }
+}
+
+const formattedDate = formatDate(pubDate);
+const isoDateString = pubDate ? new Date(pubDate).toISOString() : ''; // datetime 속성용 ISO 형식
+---
+
+<li>
+  <a href={url} title={title} class="group flex flex-col h-full">
+    <article class="flex-1 flex flex-col bg-white shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg overflow-hidden">
+      {/* Image Section - Only show if image exists */}
+      {hasImage && (
+        <div class="block w-full aspect-[3/2] overflow-hidden">
+          <img
+            class="object-cover bg-center h-full w-full group-hover:scale-105 transition-transform duration-300"
+            src={displayImage}
+            alt={displayAlt}
+            loading="lazy"
+            onerror="this.onerror=null; this.src='/placeholder-image.jpg';"
+          />
+        </div>
+      )}
+
+      {/* Content Section */}
+      <div class="flex flex-col justify-between flex-1 p-4 sm:p-6">
+        <div>
+          {/* Show description preview only if NO image AND description exists */}
+          {!hasImage && shouldShowDescription && (
+            <p class="mb-3 text-sm text-gray-600 line-clamp-4 italic"> {/* Style for description preview */}
+              {description}
+            </p>
+          )}
+
+          {/* Date - Apply formatting */}
+          <div class="flex text-xs text-gray-500 mb-2">
+            {/* datetime 속성에는 ISO 형식을 유지하고, 보이는 텍스트만 포맷팅 */}
+            <time datetime={isoDateString}>{formattedDate}</time>
+          </div>
+
+          {/* Title */}
+          <h3 class="text-gray-900 mt-1 font-display text-lg font-semibold leading-tight group-hover:text-blue-600 transition-colors duration-300">
+            {title}
+          </h3>
+
+          {/* Show full description only if there IS an image AND description exists */}
+          {hasImage && shouldShowDescription && (
+            <p class="mt-2 text-sm text-gray-600 line-clamp-3">{description}</p>
+          )}
+        </div>
+
+        {/* Tags Section */}
+        {displayTags.length > 0 && (
+          <div class="mt-4 flex flex-wrap gap-2">
+            {displayTags.map((tag) => (
+              <span class="inline-block bg-gray-100 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+    </article>
+  </a>
+</li>
+
+<style>
+li {
+  list-style: none;
+}
+</style>

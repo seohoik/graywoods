@@ -1,0 +1,103 @@
+---
+// src/layouts/BaseLayout.astro
+// Import global styles - Adjust path if your global.css is elsewhere
+import "../styles/global.css";
+// Import SEO component if you plan to use it per-page
+// import { AstroSeo } from "@astrolib/seo"; // Uncomment if needed
+
+// Define props this layout accepts
+export interface Props {
+  title?: string; // Optional title, defaults below
+  description?: string;
+  // Add other props like canonicalURL, ogImageURL if needed for SEO per page
+}
+
+// Set default values or use passed props
+const {
+  title = "낱말로 쌓은 성", // Default title
+  description = "내 생각과 조사", // Default description
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth"> {/* Set language to Korean */}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+
+    {/* Basic Meta Tags (You can enhance these or use AstroSeo) */}
+    <meta name="description" content={description} />
+    {/* Add keywords, author etc. if needed */}
+    {/* <meta name="keywords" content="블로그, 글, 생각" /> */}
+    {/* <meta name="author" content="Your Name" /> */}
+
+    {/* Favicons (Keep your existing favicon links) */}
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    {/* Add other favicon sizes if you have them */}
+    {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
+    {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /> */}
+
+    {/* Browser Hints & Theme Color */}
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" /> {/* Adjust theme color */}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {/* Fonts (Restore the font links from the original theme or previous version) */}
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=jet-brains-mono@1,2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    {/* 이롭게 바탕체 추가 (CDN 사용 예시 - 눈누) */}
+    <style is:global>
+      @font-face {
+          font-family: 'IropkeBatang';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.1/IropkeBatang-Regular.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+      /* 이롭게 바탕체를 적용할 클래스 (선택 사항) */
+      .font-iropke {
+          font-family: 'IropkeBatang', serif; /* serif는 대체 글꼴 */
+      }
+    </style>
+
+    {/* Scripts (Restore necessary scripts like AlpineJS if used) */}
+    {/* <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> */}
+
+    {/* Slot for page-specific head elements (like AstroSeo) */}
+    <slot name="head" />
+  </head>
+  <body class="font-sans antialiased text-zinc-900 bg-white"> {/* Base body styles */}
+    {/* You might need to restore Header and Footer components from the original theme */}
+    <header class="px-6 py-4 flex items-center justify-between text-sm font-medium uppercase border-b"> {/* Example Header Style */}
+       {/* Use your site title or logo */}
+       <a href="/" class="hover:text-blue-600">{title}</a>
+       <nav>
+         {/* Add navigation links here if needed */}
+         {/* <a href="/about" class="ml-4 hover:text-blue-600">About</a> */}
+       </nav>
+     </header>
+
+    <main class="py-8"> {/* Add padding to main content area */}
+      <slot /> {/* Page content goes here */}
+    </main>
+
+    <footer class="mt-12 py-6 px-6 border-t text-center text-xs text-zinc-500"> {/* Example Footer Style */}
+       © {new Date().getFullYear()} {title}. All rights reserved.
+       {/* You can add more footer content here */}
+     </footer>
+  </body>
+</html>
