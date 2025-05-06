@@ -19,7 +19,7 @@ const {
 } = Astro.props;
 
 // import vercel analytics
-import Analytics from '@vercel/analytics/astro'
+import { Analytics } from '@vercel/analytics/astro'
 
 ---
 
@@ -83,7 +83,6 @@ import Analytics from '@vercel/analytics/astro'
 
     {/* Slot for page-specific head elements (like AstroSeo) */}
     <slot name="head" />
-    <Analytics />
   </head>
   <body class="font-sans antialiased text-zinc-900 bg-white"> {/* Base body styles */}
     {/* You might need to restore Header and Footer components from the original theme */}
@@ -104,5 +103,6 @@ import Analytics from '@vercel/analytics/astro'
        © {new Date().getFullYear()} {title}. All rights reserved.
        {/* You can add more footer content here */}
      </footer>
+     <Analytics />
   </body>
 </html>
