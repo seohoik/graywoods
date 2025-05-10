@@ -15,7 +15,7 @@ export interface Props {
 // Set default values or use passed props
 const {
   title = "낱말로 쌓은 성", // Default title
-  description = "내 생각과 조사", // Default description
+  description = "오롯이 나의 생각과 의견", // Default description
 } = Astro.props;
 
 ---
@@ -23,6 +23,17 @@ const {
 <!DOCTYPE html>
 <html lang="ko" class="scroll-smooth"> {/* Set language to Korean */}
   <head>
+  
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6SPH61QXQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q6SPH61QXQ');
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
