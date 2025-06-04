@@ -6,7 +6,7 @@ import { AstroSeo } from "@astrolib/seo"; // Assuming you still use this
 const { frontmatter } = Astro.props;
 
 // --- SEO Data ---
-const pageTitle = frontmatter.title || "낱말로 쌓은 성성";
+const pageTitle = frontmatter.title || "낱말로 쌓은 성";
 const pageDescription = frontmatter.description || "블로그 게시글";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImageURL = frontmatter.heroImage
@@ -35,7 +35,7 @@ const shouldShowDescription = frontmatter.description && frontmatter.description
         type: "image/jpeg",
       },
     ],
-    site_name: "낱말로 쌓은 성성",
+    site_name: "낱말로 쌓은 성",
     type: "article",
     article: {
         publishedTime: frontmatter.pubDate.toISOString(),
