@@ -14,7 +14,7 @@ Beautifully crafted with Astro.js, and Tailwind CSS — Simple & easy to customi
 
 ## This template is using Tailwind CSS V4
 
-Now we are using only a CSS file. It's called `global.css` and it's located in the src/styles folder. Now we are eimporting Tailwind CSS on the same file instead of using the `tailwind.config.cjs` file. Like this:
+Now we are using only a CSS file. It's called `global.css` and it's located in the src/styles folder. Now we are importing Tailwind CSS on the same file instead of using the `tailwind.config.cjs` file. Like this:
 
 ```css
 // Importing Tailwind CSS
