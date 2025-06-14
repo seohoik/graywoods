@@ -60,12 +60,12 @@ const shouldShowDescription = frontmatter.description && frontmatter.description
       <div class="lg:text-center">
         {/* Use heroImage if it exists */}
         {frontmatter.heroImage && (
-          <img
-            class="lg:h-96 w-full object-cover object-center mb-8 rounded-lg shadow-md"
-            src={frontmatter.heroImage}
-            alt={frontmatter.title || '게시글 대표 이미지'}
-            loading="lazy"
-            onerror="this.style.display='none';"
+            <img
+              src={frontmatter.heroImage}
+              alt={frontmatter.title || '게시글 대표 이미지'}
+              class="lg:h-96 w-full object-cover object-center mb-8 rounded-lg shadow-md"
+              loading="lazy"
+              onerror="this.style.display='none';"
           />
         )}
         <div class="flex flex-col md:flex-row mt-4 justify-between items-center mb-8">
