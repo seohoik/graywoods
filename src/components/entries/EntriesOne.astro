@@ -1,6 +1,6 @@
 ---
 // src/components/entries/EntriesOne.astro
-const { title, url, description, pubDate, image, alt, tags } = Astro.props;
+const { title, url, description, pubDate, pubdate, image, alt, tags } = Astro.props;
 
 const displayImage = image; // Keep image URL if provided
 const displayAlt = alt || title || 'Blog post image';
@@ -22,13 +22,16 @@ function formatDate(dateString) {
       day: 'numeric'  // 'D일' 형식
     });
   } catch (e) {
-    console.error("Invalid date format:", dateString, e);
+    console.error('Invalid date format:', dateString, e);
     return dateString; // 오류 발생 시 원본 문자열 반환 (또는 다른 처리)
   }
 }
 
-const formattedDate = formatDate(pubDate);
-const isoDateString = pubDate ? new Date(pubDate).toISOString() : ''; // datetime 속성용 ISO 형식
+// Use pubDate if provided, otherwise fallback to pubdate
+const dateToUse = pubDate || pubdate;
+const formattedDate = formatDate(dateToUse);
+// Use ISO string for datetime attribute; ensures valid value or empty string
+const isoDateString = dateToUse ? new Date(dateToUse).toISOString() : '';
 ---
 
 <li>
@@ -36,7 +39,7 @@ const isoDateString = pubDate ? new Date(pubDate).toISOString() : ''; // datetim
     <article class="flex-1 flex flex-col bg-white shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg overflow-hidden">
       {/* Image Section - Only show if image exists */}
       {hasImage && (
-        <div class="block w-full aspect-square overflow-hidden">
+        <div class="block w-full aspect-[16/9] overflow-hidden">
           <img
             class="object-cover bg-center h-full w-full group-hover:scale-105 transition-transform duration-300"
             src={displayImage}
