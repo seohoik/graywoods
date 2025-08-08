@@ -22,6 +22,7 @@ const sortedPosts = posts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.d
           pubDate={post.data.pubDate.toISOString()}
           author={post.data.author}
           image={post.data.heroImage}
+          alt={post.data.title}
           tags={post.data.tags}
         />
       ))}
