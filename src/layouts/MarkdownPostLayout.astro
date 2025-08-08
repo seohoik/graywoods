@@ -4,6 +4,7 @@ import BaseLayout from "./BaseLayout.astro"; // Ensure path is correct
 import { AstroSeo } from "@astrolib/seo"; // Assuming you still use this
 
 const { frontmatter } = Astro.props;
+const hasHero = !!frontmatter.heroImage;
 
 // --- SEO Data ---
 const pageTitle = frontmatter.title || "낱말로 쌓은 성성";
@@ -14,7 +15,10 @@ const ogImageURL = frontmatter.heroImage
   : new URL("/default-og-image.jpg", Astro.site).toString(); // Default OG image
 
 // 설명(description)이 실제로 존재하고, 기본 안내 문구가 아닌 경우에만 true
-const shouldShowDescription = frontmatter.description && frontmatter.description.trim() !== "기본 설명을 입력하세요" && frontmatter.description.trim() !== "";
+const shouldShowDescription =
+  frontmatter.description &&
+  frontmatter.description.trim() !== "기본 설명을 입력하세요" &&
+  frontmatter.description.trim() !== "";
 
 ---
 
@@ -56,20 +60,21 @@ const shouldShowDescription = frontmatter.description && frontmatter.description
   ogImageAlt={`${pageTitle} - 대표 이미지`}
 >
   <section>
-    <div class="px-8 py-12 md:px-12 mx-auto lg:pt-24 max-w-7xl lg:px-32">
+    {hasHero && (
+      <div class="mx-auto max-w-7xl mb-8">
+        <div class="w-full aspect-[16/5] overflow-hidden">
+          <img
+            src={frontmatter.heroImage}
+            alt={frontmatter.title || '게시글 대표 이미지'}
+            class="object-cover object-center w-full h-full"
+            loading="lazy"
+            onerror="this.style.display='none';"
+          />
+        </div>
+      </div>
+    )}
+    <div class={`px-8 md:px-12 mx-auto max-w-7xl lg:px-32 ${hasHero ? 'pt-8 pb-12' : 'py-12 lg:pt-24'}`}>
       <div class="lg:text-center">
-        {/* Use heroImage if it exists */}
-        {frontmatter.heroImage && (
-            <div class="w-full aspect-[16/5] overflow-hidden mb-8">
-              <img
-                src={frontmatter.heroImage}
-                alt={frontmatter.title || '게시글 대표 이미지'}
-                class="object-cover object-center w-full h-full"
-                loading="lazy"
-                onerror="this.style.display='none';"
-              />
-            </div>
-        )}
         <div class="flex flex-col md:flex-row mt-4 justify-between items-center mb-8">
           {/* Display Date */}
           <p class="text-sm text-zinc-500 mb-2 md:mb-0">

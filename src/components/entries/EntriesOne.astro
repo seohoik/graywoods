@@ -45,7 +45,7 @@ const isoDateString = dateToUse ? new Date(dateToUse).toISOString() : '';
             src={displayImage}
             alt={displayAlt}
             loading="lazy"
-            onerror="this.onerror=null; this.src='/placeholder-image.jpg';"
+            onerror="this.style.display='none';"
           />
         </div>
       )}
