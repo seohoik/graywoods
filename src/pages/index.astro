@@ -14,18 +14,22 @@ const sortedPosts = posts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.d
 
   <section class="mx-auto mt-12 max-w-7xl px-8 md:px-12 lg:px-32">
     <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {sortedPosts.map((post) => (
-        <EntriesOne
-          url={`/posts/${post.slug}`}
-          title={post.data.title}
-          description={post.data.description}
-          pubDate={post.data.pubDate.toISOString()}
-          author={post.data.author}
-          image={post.data.heroImage || post.data.image?.url}
-          alt={post.data.image?.alt || post.data.title}
-          tags={post.data.tags}
-        />
-      ))}
+      {sortedPosts.map((post) => {
+        const imageUrl = post.data.heroImage ?? post.data.image?.url;
+        const altText = post.data.image?.alt || post.data.title;
+        return (
+          <EntriesOne
+            url={`/posts/${post.slug}`}
+            title={post.data.title}
+            description={post.data.description}
+            pubDate={post.data.pubDate.toISOString()}
+            author={post.data.author}
+            image={imageUrl}
+            alt={altText}
+            tags={post.data.tags}
+          />
+        );
+      })}
     </ul>
   </section>
 </BaseLayout>
