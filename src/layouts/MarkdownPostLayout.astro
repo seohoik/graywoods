@@ -62,52 +62,94 @@ const shouldShowDescription =
   ogImageAlt={`${pageTitle} - 대표 이미지`}
 >
   <section>
-    {hasHero && (
-      <img
-        src={heroSrc}
-        alt={frontmatter.image?.alt || frontmatter.title || '게시글 대표 이미지'}
-        class="mx-auto mb-8 w-full max-w-7xl h-auto object-cover object-center rounded-lg"
-        loading="lazy"
-        onerror="this.style.display='none';"
-      />
-    )}
-    <div class={`px-8 md:px-12 mx-auto max-w-7xl lg:px-32 ${hasHero ? 'pt-8 pb-12' : 'py-12 lg:pt-24'}`}>
-      <div class="lg:text-center">
-        <div class="flex flex-col md:flex-row mt-4 justify-between items-center mb-8">
-          {/* Display Date */}
-          <p class="text-sm text-zinc-500 mb-2 md:mb-0">
-            {frontmatter.pubDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </p>
-          {/* Display Tags if they exist */}
-          {frontmatter.tags && frontmatter.tags.length > 0 && (
-            <div class="flex flex-wrap justify-center md:justify-end gap-2">
-              {frontmatter.tags.map((tag) => (
-                <span class="inline-block bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">
-                  <a href={`/tags/${tag}`} class="hover:text-blue-600">{tag}</a>
-                </span>
-              ))}
+    {/* Hero Banner Section - 파노라마/띠 형태 배경 */}
+    {hasHero ? (
+      <div class="relative w-full h-[280px] sm:h-[320px] md:h-[380px] lg:h-[420px] overflow-hidden">
+        {/* Background Image */}
+        <img
+          src={heroSrc}
+          alt={frontmatter.image?.alt || frontmatter.title || '게시글 대표 이미지'}
+          class="absolute inset-0 w-full h-full object-cover object-center"
+          loading="eager"
+          onerror="this.parentElement.classList.add('hero-fallback');"
+        />
+        {/* Gradient Overlay for text readability */}
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20"></div>
+
+        {/* Content overlay */}
+        <div class="absolute inset-0 flex flex-col justify-end">
+          <div class="px-8 md:px-12 mx-auto max-w-7xl lg:px-32 w-full pb-8 md:pb-12">
+            {/* Date and Tags */}
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-2">
+              <p class="text-sm text-white/80">
+                {frontmatter.pubDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </p>
+              {frontmatter.tags && frontmatter.tags.length > 0 && (
+                <div class="flex flex-wrap gap-2">
+                  {frontmatter.tags.map((tag) => (
+                    <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-medium px-2.5 py-1 rounded-full">
+                      <a href={`/tags/${tag}`} class="hover:text-white/80 transition-colors">{tag}</a>
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
+            {/* Post Title */}
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight text-balance font-semibold font-display text-white drop-shadow-lg">
+              {frontmatter.title}
+            </h1>
+            {/* Post Description */}
+            {shouldShowDescription && (
+              <p class="max-w-3xl mt-4 text-base md:text-lg text-white/90 drop-shadow">
+                <em>{frontmatter.description}</em>
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+    ) : (
+      /* No Hero Image - Original layout */
+      <div class="px-8 md:px-12 mx-auto max-w-7xl lg:px-32 py-12 lg:pt-24">
+        <div class="lg:text-center">
+          <div class="flex flex-col md:flex-row mt-4 justify-between items-center mb-8">
+            <p class="text-sm text-zinc-500 mb-2 md:mb-0">
+              {frontmatter.pubDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+            {frontmatter.tags && frontmatter.tags.length > 0 && (
+              <div class="flex flex-wrap justify-center md:justify-end gap-2">
+                {frontmatter.tags.map((tag) => (
+                  <span class="inline-block bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">
+                    <a href={`/tags/${tag}`} class="hover:text-blue-600">{tag}</a>
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+          <h1 class="text-3xl tracking-tight text-balance mt-12 lg:mt-16 font-semibold font-display text-black md:text-5xl lg:text-6xl">
+            {frontmatter.title}
+          </h1>
+          {shouldShowDescription && (
+            <p class="max-w-3xl mt-6 mx-auto text-lg text-zinc-600">
+              <em>{frontmatter.description}</em>
+            </p>
           )}
         </div>
-        {/* Post Title */}
-        <h1 class="text-3xl tracking-tight text-balance mt-12 lg:mt-16 font-semibold font-display text-black md:text-5xl lg:text-6xl">
-          {frontmatter.title}
-        </h1>
-        {/* Post Description - Show only if it exists and is not the placeholder */}
-        {shouldShowDescription && (
-           <p class="max-w-3xl mt-6 mx-auto text-lg text-zinc-600">
-             <em>{frontmatter.description}</em>
-           </p>
-        )}
       </div>
-      {/* Post Content - Apply Iropke Batang font */}
-      <div class="mt-12 lg:mt-16 max-w-3xl mx-auto">
-        {/* Add 'font-iropke' class here */}
+    )}
+
+    {/* Post Content - Apply Iropke Batang font */}
+    <div class="px-8 md:px-12 mx-auto max-w-7xl lg:px-32 py-12">
+      <div class="max-w-3xl mx-auto">
         <article class="prose prose-lg lg:prose-xl prose-neutral max-w-none prose-a:text-blue-600 hover:prose-a:text-blue-800 prose-img:rounded-lg prose-img:shadow-sm prose-headings:font-display prose-headings:font-semibold font-iropke">
-          {/* The actual blog post content is rendered here */}
           <slot />
         </article>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .hero-fallback {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+  }
+</style>
