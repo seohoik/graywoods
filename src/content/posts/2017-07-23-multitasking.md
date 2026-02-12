@@ -7,7 +7,7 @@ tags:
   - 멀티태스킹
   - 습관
 pubDate: 2017-07-23
-description: 기본 설명을 입력하세요
+description: "Fast Company에 기고된 Sorry, But Your Brain Only Knows One Way To Multitask Effectively라는 글을 번역/정리해 보았습니다."
 ---
 
 Fast Company에 기고된 [Sorry, But Your Brain Only Knows One Way To Multitask Effectively](https://www.fastcompany.com/3067257/sorry-but-your-brain-only-knows-one-way-to-multitask-effectively)라는 글을 번역/정리해 보았습니다.

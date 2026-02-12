@@ -8,7 +8,7 @@ tags:
   - 할일
   - 할일관리
 pubDate: 2017-07-06
-description: 기본 설명을 입력하세요
+description: "지난 2017년 5월 18일에 Things 3(아이폰, 아이패드)가 출시되었고, 며칠 전 7월 3일에는 3.1 버전으로 업데이트 하면서 Things 앱에서는 처음으로 프로젝트 내에서 반복 할일을 지원하기 시작했습니다."
 ---
 
 지난 2017년 5월 18일에 [Things 3](https://culturedcode.com/things/whats-new/)([아이폰](https://itunes.apple.com/us/app/things-3/id904237743?mt=8), [아이패드](https://itunes.apple.com/us/app/things-3-for-ipad/id904244226?mt=8))가 출시되었고, 며칠 전 7월 3일에는 3.1 버전으로 업데이트 하면서 Things 앱에서는 처음으로 프로젝트 내에서 반복 할일을 지원하기 시작했습니다.

@@ -11,7 +11,7 @@ tags:
   - 할일
   - 할일관리
 pubDate: 2015-12-20
-description: 기본 설명을 입력하세요
+description: "Getting Things Done: The Art of Stress-Free Productivity(이하, \"GTD\")는 2002년에 초판이 나왔습니다. 우리나라에는 끝도 없는 일 깔끔하게 해치우기라는 제목으로 2011년에 번역서가 나와 있는 것으로 보입니다. 아마..."
 ---
 
 > David Allen이 쓴 GTD를 읽고 나서 처음에는 GTD 입문을 위한 가이드 비슷한 것을 써볼까도 생각해 봤습니다. 하지만, 그런 목적이라면 Clien 커뮤니티에서 [이렇게 잘 정리된 글](http://m.clien.net/cs3/board?bo_style=view&bo_table=lecture&page=1&wr_id=99438)이 있고, 기술적인 것은 일단 GTD를 적용해 보겠다고 마음먹고 찾으면 얼마든지 찾아지는 것이라는 생각이 들어서 저는 책 자체에 대해서 소개를 해볼까 합니다.

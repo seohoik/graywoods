@@ -40,12 +40,6 @@ const pageTitle = title ? `${title} - ${siteTitle}` : siteTitle;
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
 
-    {/* Basic Meta Tags (You can enhance these or use AstroSeo) */}
-    <meta name="description" content={description} />
-    {/* Add keywords, author etc. if needed */}
-    {/* <meta name="keywords" content="블로그, 글, 생각" /> */}
-    {/* <meta name="author" content="Your Name" /> */}
-
    <!-- Favicon links pointing to the correct paths in /public/favicons/ -->
   <link rel="icon" href="/favicons/favicon.ico" sizes="any" /> <!-- ICO with multiple sizes -->
   <link rel="icon" href="/favicons/icon.svg" type="image/svg+xml" />
@@ -101,11 +95,83 @@ const pageTitle = title ? `${title} - ${siteTitle}` : siteTitle;
     <header class="px-6 py-4 flex items-center justify-between text-sm font-medium uppercase border-b"> {/* Example Header Style */}
        {/* Use your site title or logo */}
        <a href="/" class="hover:text-blue-600">{siteTitle}</a>
-       <nav>
-         {/* Add navigation links here if needed */}
-         {/* <a href="/about" class="ml-4 hover:text-blue-600">About</a> */}
+       <nav class="flex items-center gap-4">
+         <a href="/tags/" class="hover:text-blue-600">태그</a>
+         <a href="/rss.xml" class="hover:text-blue-600">RSS</a>
+         <button id="search-toggle" class="hover:text-blue-600" aria-label="검색">
+           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+           </svg>
+         </button>
        </nav>
      </header>
+
+    {/* Search overlay */}
+    <div id="search-overlay" class="hidden fixed inset-0 z-50 bg-white/95 backdrop-blur-sm overflow-y-auto">
+      <div class="max-w-2xl mx-auto px-6 pt-8">
+        <div class="flex justify-end mb-4">
+          <button id="search-close" class="text-zinc-500 hover:text-zinc-900" aria-label="닫기">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div id="search"></div>
+      </div>
+    </div>
+
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+    <script is:inline>
+      window.addEventListener('DOMContentLoaded', () => {
+        new PagefindUI({
+          element: "#search",
+          showSubResults: true,
+          translations: {
+            placeholder: "검색어를 입력하세요...",
+            zero_results: "[SEARCH_TERM]에 대한 검색 결과가 없습니다",
+            many_results: "[COUNT]개의 결과",
+            one_result: "1개의 결과",
+            searching: "검색 중...",
+          }
+        });
+
+        const overlay = document.getElementById('search-overlay');
+        const toggle = document.getElementById('search-toggle');
+        const close = document.getElementById('search-close');
+
+        toggle?.addEventListener('click', () => {
+          overlay.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+          setTimeout(() => overlay.querySelector('input')?.focus(), 100);
+        });
+
+        close?.addEventListener('click', () => {
+          overlay.classList.add('hidden');
+          document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && !overlay.classList.contains('hidden')) {
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+    </script>
+
+    <style is:global>
+      :root {
+        --pagefind-ui-scale: 0.9;
+        --pagefind-ui-primary: #2522fc;
+        --pagefind-ui-text: #18181b;
+        --pagefind-ui-background: #ffffff;
+        --pagefind-ui-border: #e4e4e7;
+        --pagefind-ui-border-width: 1px;
+        --pagefind-ui-border-radius: 8px;
+        --pagefind-ui-font: "Inter", sans-serif;
+      }
+    </style>
 
     <main class="py-8"> {/* Add padding to main content area */}
       <slot /> {/* Page content goes here */}

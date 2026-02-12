@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npx pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
     "postinstall": "chmod +x node_modules/.bin/*"
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0-beta.9",
+    "pagefind": "^1.4.0",
     "tailwindcss": "^4.0.0-beta.9"
   }
 }

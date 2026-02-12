@@ -22,7 +22,7 @@ tags:
   - 할일
   - 할일관리
 pubDate: 2015-02-08
-description: 기본 설명을 입력하세요
+description: "1. 소개: GTD & OmniFocus vs. Things"
 ---
 
 1. 소개: GTD & [OmniFocus](https://appsto.re/us/EOW41.i) vs. [Things](https://appsto.re/us/Jz8Tv.i)

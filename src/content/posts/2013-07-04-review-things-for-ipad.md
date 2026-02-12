@@ -15,7 +15,7 @@ tags:
   - 할일
   - 할일관리
 pubDate: 2013-07-04
-description: 기본 설명을 입력하세요
+description: "예전에 Things for iPhone에 대한 리뷰를 한 적이 있습니다. 그 때는 아이폰 버전의 Things만 가지고 있었는데, 최근에 아이패드 버전의 Things for iPad도 구매하였습니다. 사실 Things든 OmniFocus든 Mac 버전 없이는..."
 ---
 
 예전에 Things for iPhone에 대한 [리뷰](https://graywoods.wordpress.com/2012/12/27/%ec%95%b1-%eb%a6%ac%eb%b7%b0_things-for-iphone/)를 한 적이 있습니다. 그 때는 아이폰 버전의 Things만 가지고 있었는데, 최근에 아이패드 버전의 [Things for iPad](https://itunes.apple.com/kr/app/things-for-ipad/id364365411?mt=8)도 구매하였습니다. 사실 Things든 OmniFocus든 Mac 버전 없이는 반쪽짜리라고는 하지만 아이폰 버전만으로도 일단 잘 사용하고 있었고, 좀 더 큰 화면으로 보면서 내가 할 일을 정리하는 것도 나쁘지 않을 것이라고 생각해서 아이패드 버전도 구입하였습니다.

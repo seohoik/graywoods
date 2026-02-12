@@ -7,7 +7,7 @@ tags:
   - apple
   - pencil
 pubDate: 2016-09-18
-description: 기본 설명을 입력하세요
+description: "Once there were lots of rumours that there will be a pro version of iPhone 7 with smart connector on back sides. And I felt that was very plausible...."
 ---
 
 ## Missing iPhone Pro

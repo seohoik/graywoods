@@ -6,7 +6,7 @@ tags:
   - figdet-spinner
   - 피젯-스피너
 pubDate: 2017-06-06
-description: 기본 설명을 입력하세요
+description: "블룸버그에 올라온 How the Fidget Spinner Origin Story Spun Out of Control를 번역하였습니다."
 ---
 
 _블룸버그에 올라온 [How the Fidget Spinner Origin Story Spun Out of Control](https://www.bloomberg.com/news/articles/2017-05-11/how-the-fidget-spinner-origin-story-spun-out-of-control?cmpid=socialflow-twitter-business&utm_content=business&utm_campaign=socialflow-organic&utm_source=twitter&utm_medium=social)를 번역하였습니다._

@@ -36,10 +36,16 @@
           },
           "default": []
         },
+        "heroImage": {
+          "type": "string"
+        },
         "image": {
           "type": "object",
           "properties": {
             "url": {
+              "type": "string"
+            },
+            "alt": {
               "type": "string"
             }
           },
