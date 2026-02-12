@@ -11,7 +11,7 @@ tags:
   - 앱
   - 어플
 pubDate: 2014-01-31
-description: 기본 설명을 입력하세요
+description: "Launch Center Pro(iPhone, iPad, 이하 LCP)는 iOS 고유의 URL scheme을 이용하여, 단순히 아이폰 또는 아이패드에 설치되어 있는 앱을 실행시키는 것을 넘어서서, 그 앱에서 할 수 있는 특정 활동을 바로 실행시켜 주는 기능을 하는..."
 ---
 
 Launch Center Pro([iPhone](https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8), [iPad](https://itunes.apple.com/us/app/launch-center-pro-for-ipad/id799664902?mt=8), 이하 LCP)는 iOS 고유의 URL scheme을 이용하여, 단순히 아이폰 또는 아이패드에 설치되어 있는 앱을 실행시키는 것을 넘어서서, 그 앱에서 할 수 있는 특정 활동을 바로 실행시켜 주는 기능을 하는 아이폰 내에서 작은 플랫폼과 같은 기능을 하는 앱이라고 할 수 있습니다. 간략한 사용 밥법은 아래에 첨부된 동영상을 참고해 주세요.

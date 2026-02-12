@@ -1,0 +1,37 @@
+---
+// Pagefind search component
+---
+<div class="pagefind-search-wrapper">
+  <div id="search"></div>
+</div>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+<script is:inline src="/pagefind/pagefind-ui.js"></script>
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      translations: {
+        placeholder: "검색어를 입력하세요...",
+        zero_results: "[SEARCH_TERM]에 대한 검색 결과가 없습니다",
+        many_results: "[COUNT]개의 결과",
+        one_result: "1개의 결과",
+        searching: "검색 중...",
+      }
+    });
+  });
+</script>
+
+<style is:global>
+  :root {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: #2522fc;
+    --pagefind-ui-text: #18181b;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #e4e4e7;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 8px;
+    --pagefind-ui-font: "Inter", sans-serif;
+  }
+</style>

@@ -1,5 +1,50 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts");
+const recentPosts = allPosts
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 5);
 ---
-<BaseLayout>
+
+<BaseLayout title="페이지를 찾을 수 없습니다" description="요청하신 페이지가 존재하지 않습니다.">
+  <section class="px-8 md:px-12 mx-auto max-w-7xl py-24 lg:px-32 text-center">
+    <h1 class="text-6xl md:text-8xl font-display font-semibold text-zinc-200">404</h1>
+    <p class="mt-6 text-xl text-zinc-700">요청하신 페이지를 찾을 수 없습니다.</p>
+    <p class="mt-2 text-zinc-500">주소가 올바른지 확인하시거나, 아래 링크를 이용해 주세요.</p>
+
+    <a
+      href="/"
+      class="mt-8 inline-block px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-zinc-800 transition-colors"
+    >
+      홈으로 돌아가기
+    </a>
+
+    {recentPosts.length > 0 && (
+      <div class="mt-16 text-left max-w-md mx-auto">
+        <h2 class="text-lg font-display font-semibold text-zinc-800 mb-4">최근 글</h2>
+        <ul class="space-y-3">
+          {recentPosts.map((post) => (
+            <li>
+              <a
+                href={`/posts/${post.slug}`}
+                class="text-blue-600 hover:text-blue-800 hover:underline"
+              >
+                {post.data.title}
+              </a>
+              <span class="text-xs text-zinc-400 ml-2">
+                {post.data.pubDate.toLocaleDateString('ko-KR', {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
+                })}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </section>
 </BaseLayout>

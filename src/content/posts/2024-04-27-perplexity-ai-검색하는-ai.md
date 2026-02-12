@@ -3,7 +3,7 @@ title: 'Perplexity.ai, 검색하는 AI'
 categories:
   - things
 pubDate: 2024-04-27
-description: 기본 설명을 입력하세요
+description: "Perplexity는 검색을 중심에 둔 AI 서비스이다. OpenAI의 ChatGPT가 특정 시점까지의 정보만을 기본으로 반영하고 있다면, perplexity는 기본적으로 인터넷 검색을 먼저 하고 해당 정보를 기반으로 답변을 제공한다는 것이 차이점이다. 다른 여러..."
 ---
 
 [Perplexity](https://www.perplexity.ai)는 검색을 중심에 둔 AI 서비스이다. OpenAI의 [ChatGPT](https://chat.openai.com/)가 특정 시점까지의 정보만을 기본으로 반영하고 있다면, perplexity는 기본적으로 인터넷 검색을 먼저 하고 해당 정보를 기반으로 답변을 제공한다는 것이 차이점이다. 다른 여러 서비스와 유사하게 기본 기능의 ai는 무료로 제공하되 pro 기능은 유료 구독의 형식으로 제공하고 있다.

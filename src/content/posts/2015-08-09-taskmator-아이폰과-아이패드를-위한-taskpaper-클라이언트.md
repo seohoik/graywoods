@@ -15,7 +15,7 @@ tags:
   - 할일
   - 할일관리
 pubDate: 2015-08-09
-description: 기본 설명을 입력하세요
+description: "Taskmator는 iOS 기기에서 Taskpaper 형식의 문서와 호환되도록 개발된 앱입니다. 그러니 일단 Taskpaper가 무엇인지부터 간단히 설명드릴게요."
 ---
 
 Taskmator는 iOS 기기에서 Taskpaper 형식의 문서와 호환되도록 개발된 앱입니다. 그러니 일단 Taskpaper가 무엇인지부터 간단히 설명드릴게요.
