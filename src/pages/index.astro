@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/landing/Hero.astro';
+import EntriesOne from '@/components/entries/EntriesOne.astro';
+
+const allPosts = await getCollection('posts');
+const posts = allPosts.filter((p) => !p.data.draft);
+const sortedPosts = posts.sort(
+  (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate)
+);
+
+const BATCH_SIZE = 12;
+---
+
+<BaseLayout>
+  <Hero />
+
+  <section class="mx-auto mt-12 max-w-7xl px-8 md:px-12 lg:px-32">
+    <ul id="posts-grid" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {sortedPosts.map((post) => {
+        const imageUrl = post.data.heroImage ?? post.data.image?.url;
+        const altText = post.data.image?.alt || post.data.title;
+        return (
+          <EntriesOne
+            url={`/posts/${post.slug}`}
+            title={post.data.title}
+            description={post.data.description}
+            pubDate={post.data.pubDate.toISOString()}
+            author={post.data.author}
+            image={imageUrl}
+            alt={altText}
+            tags={post.data.tags}
+          />
+        );
+      })}
+    </ul>
+
+    <div id="scroll-sentinel" class="h-16 flex items-center justify-center">
+      <span id="loading-indicator" class="text-sm text-zinc-400 hidden">불러오는 중...</span>
+    </div>
+  </section>
+</BaseLayout>
+
+<style is:global>
+  #posts-grid > li[data-hidden] {
+    display: none;
+  }
+</style>
+
+<script is:inline define:vars={{ BATCH_SIZE }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('posts-grid');
+    const sentinel = document.getElementById('scroll-sentinel');
+    const indicator = document.getElementById('loading-indicator');
+    const items = Array.from(grid.children);
+    let shown = 0;
+
+    // Hide all items beyond the first batch
+    items.forEach((item, i) => {
+      if (i >= BATCH_SIZE) {
+        item.setAttribute('data-hidden', '');
+      }
+    });
+    shown = Math.min(BATCH_SIZE, items.length);
+
+    // Hide sentinel if all items already visible
+    if (shown >= items.length) {
+      sentinel.style.display = 'none';
+    }
+
+    function showMore() {
+      const end = Math.min(shown + BATCH_SIZE, items.length);
+      for (let i = shown; i < end; i++) {
+        items[i].removeAttribute('data-hidden');
+      }
+      shown = end;
+
+      if (shown >= items.length) {
+        sentinel.style.display = 'none';
+        observer.disconnect();
+      }
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && shown < items.length) {
+        indicator.classList.remove('hidden');
+        // Small delay for visual feedback
+        setTimeout(() => {
+          showMore();
+          indicator.classList.add('hidden');
+        }, 150);
+      }
+    }, { rootMargin: '200px' });
+
+    if (shown < items.length) {
+      observer.observe(sentinel);
+    }
+  });
+</script>
