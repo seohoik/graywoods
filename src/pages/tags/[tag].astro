@@ -2,10 +2,11 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import EntriesOne from "@/components/entries/EntriesOne.astro";
 import { getCollection } from "astro:content";
+import { isPublishedPost } from "@/utils/posts.js";
 
 export async function getStaticPaths() {
   // Build tag pages from the `posts` collection
-  const allPosts = await getCollection('posts');
+  const allPosts = (await getCollection('posts')).filter(isPublishedPost);
 
   const tagsData = {};
   allPosts.forEach(post => {

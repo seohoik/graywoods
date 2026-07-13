@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-const allPosts = await getCollection("posts");
+import { isPublishedPost } from "@/utils/posts.js";
+const allPosts = (await getCollection("posts")).filter(isPublishedPost);
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 const sortedTags = tags.sort((a, b) => a.localeCompare(b)); // Sort tags alphabetically
 
