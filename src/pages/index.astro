@@ -3,9 +3,10 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Hero from '@/components/landing/Hero.astro';
 import EntriesOne from '@/components/entries/EntriesOne.astro';
+import { isPublishedPost } from '@/utils/posts.js';
 
 const allPosts = await getCollection('posts');
-const posts = allPosts.filter((p) => !p.data.draft);
+const posts = allPosts.filter(isPublishedPost);
 const sortedPosts = posts.sort(
   (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate)
 );

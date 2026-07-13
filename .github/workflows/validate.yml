@@ -1,0 +1,40 @@
+name: Validate blog safety
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blog-safety-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Reject historical post or image changes
+        if: github.event_name == 'pull_request'
+        run: npm run check:protected-content -- "origin/${{ github.base_ref }}"
+
+      - name: Build and prove drafts cannot leak
+        run: npm run verify

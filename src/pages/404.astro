@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import { isPublishedPost } from "@/utils/posts.js";
 
 const allPosts = await getCollection("posts");
 const recentPosts = allPosts
-  .filter((p) => !p.data.draft)
+  .filter(isPublishedPost)
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
   .slice(0, 5);
 ---

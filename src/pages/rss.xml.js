@@ -4,9 +4,10 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import { marked } from 'marked'; // Markdown을 HTML로 변환하기 위해
+import { isPublishedPost } from "@/utils/posts.js";
 
 export async function GET(context) {
-  const posts = await getCollection("posts");
+  const posts = (await getCollection("posts")).filter(isPublishedPost);
 
   const items = await Promise.all(
     posts.map(async (post) => {

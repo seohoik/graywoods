@@ -7,6 +7,9 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build && npx pagefind --site dist",
+    "test:drafts": "node scripts/verify-draft-safety.mjs",
+    "check:protected-content": "node scripts/check-protected-content.mjs",
+    "verify": "npm run test:drafts",
     "preview": "astro preview",
     "astro": "astro",
     "postinstall": "chmod +x node_modules/.bin/*"
